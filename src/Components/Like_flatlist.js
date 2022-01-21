@@ -15,22 +15,11 @@ import L_Data from './LikeData';
 
 const Like_flatlist = () => (
 
-  <ScrollView  nestedScrollEnabled={true}   showsVerticalScrollIndicator={false}
-  >
-
-
+  <ScrollView nestedScrollEnabled={true} showsVerticalScrollIndicator={false}>
     <View>
-
-
-
       <FlatList
-
-
-
         data={L_Data}
-
         renderItem={({ item }) =>
-
           <View style={Styles.icons1}>
             <Image style={Styles.likeprofile} source={item.Image1} />
             <View style={Styles.L_colm}>
@@ -44,16 +33,11 @@ const Like_flatlist = () => (
               </Text>
             </TouchableOpacity>
           </View>
-
-
         }
-
         keyExtractor={item => item.id}
       />
-
     </View>
   </ScrollView>
 );
-
 export default Like_flatlist;
 

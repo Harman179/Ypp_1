@@ -17,13 +17,12 @@ function MyTabs() {
           initialRouteName="Home"
           barStyle={{backgroundColor: 'white'}}
           screenOptions={{
-            tabBarActiveTintColor: 'blue',
            // tabBarActiveBackgroundColor:'skyblue',
-           activeColor:'red',
             tabBarStyle: {backgroundColor: 'white'},
               headerShown: false,
               tabBarStyle: { position: 'absolute' },
               tabBarShowLabel: false,
+              tabBarActiveTintColor:'red',
           }}>
           <Tab.Screen
             name="Home"
