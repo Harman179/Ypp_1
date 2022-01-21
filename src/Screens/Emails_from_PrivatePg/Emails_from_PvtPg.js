@@ -13,6 +13,7 @@ import {
     Button,
 } from 'react-native';
 import Styles from '../../Utils/CommonStyle';
+import EmailPvtTabs from './EmailPvtTabs';
 
 const EmailsPvtPg = () => {
     return (
@@ -26,7 +27,7 @@ const EmailsPvtPg = () => {
           style={Styles.moreRotateIcon}
           source={require('../../assets/Icons/more.png')}></Image>
             </View>
-
+            <EmailPvtTabs/>
         </View>
     );
 };

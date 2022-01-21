@@ -29,11 +29,12 @@ export default function TabViewProfile() {
   const renderTabBar = props => (
     <TabBar
         {...props}
-        activeColor={'#1CC2DA'}
-        inactiveColor={'white'}
+        activeColor={'blue'}
+        inactiveColor={'grey'}
         style={{marginTop:0,backgroundColor:'#BAF6FF'}}
+        indicatorStyle={{ backgroundColor: '#1CC2DA' }}
         options={{
-  
+            
             tabBarIcon: () => (
               <Image
                 source={require('../../assets/Icons/help.png')}

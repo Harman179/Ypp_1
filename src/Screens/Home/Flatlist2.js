@@ -13,21 +13,6 @@ import {
 } from 'react-native';
 import Styles from '../../Utils/CommonStyle';
 
-// const Data = [
-//   {
-//     id: 1,
-//     title: '',
-//     Image1: require('../../assets/images/Rectangle_4.png'),
-//     para: 'Adi',
-//   },
-//   {
-//     id: 2,
-//     title: ' ',
-//     Icon1: require('../../assets/icons/more.png'),
-//     para: ' ',
-//   },
-// ];
-
 function FlatlistB() {
   return (
     <View>
@@ -89,38 +74,6 @@ function FlatlistB() {
       <View style={Styles.icons1}>
         <Text style={Styles.NameText2}>20min ago</Text>
       </View>
-
-      {/* <FlatList
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        data={Data}
-        renderItem={({item}) => (
-          <View>
-            <Text>{item.title}</Text>
-
-            <Image
-              style={{
-                borderRadius: 54,
-                width: 34,
-                height: 34,
-                marginLeft: 15,
-                marginTop: 11,
-                borderColor: '#7797EB',
-              }}
-              source={item.Image1}></Image>
-            <Text>{item.para}</Text>
-            <Image
-              style={{
-                width: 20,
-                height: 20,
-                marginTop: 19,
-                marginLeft: 283,
-              }}
-              source={item.Icon1}></Image>
-          </View>
-        )}
-        keyExtractor={item => item.id}
-      /> */}
     </View>
   );
 }

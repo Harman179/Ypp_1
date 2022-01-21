@@ -24,8 +24,7 @@ export default function MsgTabs() {
         activeColor={'#000000'}
         inactiveColor={'#000000'}
         style={{marginTop:0,backgroundColor:'#BAF6FF'}}
-        indicatorStyle={styles.indicatorStyle}
-        indicatorStyle={'#1CC2DA'}
+        indicatorStyle={{ backgroundColor: '#1CC2DA' }}
         options={{
   
         

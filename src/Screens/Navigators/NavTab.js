@@ -23,6 +23,8 @@ function MyTabs() {
               tabBarStyle: { position: 'absolute' },
               tabBarShowLabel: false,
               tabBarActiveTintColor:'red',
+              activeTintColor: 'red',
+              inactiveTintColor: 'gray',
           }}>
           <Tab.Screen
             name="Home"
@@ -43,11 +45,10 @@ function MyTabs() {
             component={Search}
             options={{
            
-              tabBarIcon: () => (
+              tabBarIcon: ({activeTintColor}) => (
                 <Image
                   source={require('../../assets/Icons/search.png')}
-                  style={{width: 20, height: 20}}
-                />
+                  style={{width: 20, height: 20,}}                />
               ),
             }}
           />

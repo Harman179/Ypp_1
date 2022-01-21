@@ -19,7 +19,6 @@ import Profile_A from '../../Components/Profile_A';
 
 const Profile = ({ navigation }) => {
   return (
-
     <View style={Styles.container}>
 
 
@@ -45,8 +44,6 @@ const Profile = ({ navigation }) => {
           Edit Profile
         </Text>
       </TouchableOpacity>
-
-    
         <TabViewProfile />
     </View>
   );

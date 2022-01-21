@@ -1,21 +1,21 @@
 import * as React from 'react';
 import { View, StyleSheet, Dimensions, StatusBar, Image, Text, TextInput,  } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import ChatsRoute from '../../Components/Chats';
-import CallsRoute from '../../Components/Calls';
+import Security from '../../Components/Security';
+import Others from '../../Components/Others';
 
 const initialLayout = { width: Dimensions.get('window').width };
 
 const renderScene = SceneMap({
-  first: ChatsRoute,
-  second: CallsRoute,
+  first: Security,
+  second: Others,
 });
 
-export default function MsgTabs() {
+export default function EmailPvtTabs() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'first', title:'Chats' ,},
-    { key: 'second', title: 'Calls', },
+    { key: 'first', title:'Security' ,},
+    { key: 'second', title: 'Others', },
   ]);
 
   const renderTabBar = props => (
@@ -23,19 +23,10 @@ export default function MsgTabs() {
         {...props}
         activeColor={'#000000'}
         inactiveColor={'#000000'}
-        style={{marginTop:0,backgroundColor:'#BAF6FF'}}
-        indicatorStyle={styles.indicatorStyle}
-        indicatorStyle={'#1CC2DA'}
-        options={{
-  
-        
-          }}
+        style={{fontWeight: 'bold',Color:'black',marginTop:0,backgroundColor:'#FFFFFF',}}
+        indicatorStyle={{ backgroundColor: '#1CC2DA' }}
     />
-);
-
-
-
-  
+); 
   return (
     <TabView
       navigationState={{ index, routes, }}
